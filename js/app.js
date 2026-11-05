@@ -47,11 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         if (!taskText) {
+            errorMsg.classList.remove('hidden');
             errorMsg.style.display = 'block';
             return;
         }
 
 
+        errorMsg.classList.add('hidden');
         errorMsg.style.display = 'none';
 
 
